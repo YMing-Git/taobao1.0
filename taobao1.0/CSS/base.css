@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 两种字体，后者是预备字体 */
+    font-family: Arial, serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #3c3c3c;
+}
+
+/*—————— 初始化标签 ——————*/
+ul {
+    /*去列表圆点*/
+    list-style: none;
+}
+
+a {
+    /*去下划线*/
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 清除浮动标准格式 */
+.outFloat::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+}
